@@ -1,0 +1,38 @@
+projection;
+strict ( 2 );
+use draft;
+use side effects;
+
+define behavior for ZDSAG_C_CLASSIFICATION alias Classification
+{
+  use create;
+  use update;
+
+  use action assign_class_to_material;
+
+  use action Edit;
+  use action Resume;
+  use action Activate;
+  use action Discard;
+  use action Prepare;
+
+  use association _ClassificationDescription { create; with draft; }
+  use association _ClassificationCharacteristic { create; with draft; }
+}
+
+define behavior for ZDSAG_C_CLASSCHARACTERS alias Characteristics
+{
+  use update;
+  use delete;
+
+  side effects { field CharcInternalID affects field CharacteristicDescription; }
+
+  use association _Classfications { with draft; }
+}
+
+define behavior for ZDSAG_C_CLASSDESCRIPTION alias Description
+{
+  use update;
+  use delete;
+  use association _Classfications { with draft; }
+}

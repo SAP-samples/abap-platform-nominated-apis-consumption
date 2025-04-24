@@ -1,0 +1,8 @@
+@EndUserText.label: 'Service Definition for Classification Creation & Maintenance'
+@ObjectModel.leadingEntity.name: 'ZDSAG_C_CLASSIFICATION'
+define service ZDSAG_SD_CLASSIFICATION {
+  expose ZDSAG_C_CLASSIFICATION   as Classifications;
+  expose ZDSAG_C_CLASSDESCRIPTION as ClassificationDescription;
+  expose ZDSAG_C_CLASSCHARACTERS  as ClassificationCharacteristics;
+  expose ZDSAG_PRODUCT_HELPER     as ProductHelper;
+}

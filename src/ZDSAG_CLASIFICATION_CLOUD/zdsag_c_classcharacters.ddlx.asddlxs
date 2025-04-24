@@ -1,0 +1,19 @@
+@Metadata.layer: #CUSTOMER
+
+annotate view ZDSAG_C_CLASSCHARACTERS
+  with
+
+{
+  @UI.facet: [ { id: 'Characteristics',
+                 purpose: #STANDARD,
+                 type: #IDENTIFICATION_REFERENCE,
+                 label: 'Characteristics',
+                 position: 10 } ]
+  @UI.identification: [ { position: 10 } ]
+  @UI.lineItem: [ { position: 10, importance: #HIGH } ]
+  CharcInternalID;
+
+  @UI.identification: [ { position: 20 } ]
+  @UI.lineItem: [ { position: 20, importance: #HIGH } ]
+  CharacteristicDescription;
+}

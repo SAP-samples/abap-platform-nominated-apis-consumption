@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Event Binding",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "producerNamespace": "zdsag.demo",
+  "producer": "PEE4A3BE4C0632EF74684B7AA9C7A39E4",
+  "producerVersion": "0001",
+  "boName": "EventClassification",
+  "boOperation": "Created",
+  "producerType": "zdsag.demo.EventClassification.Created.v*",
+  "events": [
+    {
+      "eventVersion": "0001",
+      "entityName": "ZDSAG_R_CLASSIFICATION",
+      "entityEventName": "CLASSIFICATIONCREATED"
+    }
+  ]
+}
