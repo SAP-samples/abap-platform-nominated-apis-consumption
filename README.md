@@ -71,7 +71,7 @@ The OData service you are going to implement is based on the SAP GUI transaction
 <details>
   <summary>Click to expand!</summary>
 
->Sceanrio 1: Creation and Update existing `Classification`
+>Scenario 1: Creation and Update existing `Classification`
 >
 The resulting _Classification Processing App_ app is a SAP Fiori elements-based List Report app with search, filter, and draft capabilities for processing _Classification_ . A navigation to an Object Page for displaying the details of each _Classification_ entry in the list report is offered. The application will look like this: 
 
@@ -102,7 +102,7 @@ Below is the simplified _Classification_ data model underlying the app.
 
 <img src="images/Flowdiagram.png" alt="Classification Creation/Updation Model" width="100%">
 
->Sceanrio 2: Assign existing `Classification` to a `Material Master`
+>Scenario 2: Assign existing `Classification` to a `Material Master`
 >
 We use nominated API , to assign existing `Classification` to existing `Material`.
 
