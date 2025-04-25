@@ -162,17 +162,24 @@ The package contains other objects as well, but we have given overview of only f
 
 ## 📤 How to download and install this example
 
-Follow this instructions to import the solution:
+Use the <em>zabapgit_standalone</em> program to install the <em>RAP Nominated APIs consumption Scenario</em> by executing the following steps:
+1.  Create software component `ZABAP_ON_CLOUD` using `ABAP For Cloud` as `ABAP Language Version` as mentioned in `Requirement` section of this file.
+2.	In your ABAP project, create the package `ZCLASSIFICATION_SAMPLE` as target package for the demo content. Use `ZABAP_ON_CLOUD` as software component. Assign it to a new transport request that you only use for the demo content import. 
+3.	In your ABAP project, run the program `zabapgit_standalone`.  
+4.	Choose `New Online` and enter the following URL of this repository  `https://github.com/SAP-samples/abap-platform-nominated-apis-consumption`. 
+5.	In the package field, enter the newly created package `ZCLASSIFICATION_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
+6.	Leave the other fields unchanged and choose `Create Online Repo`.
+7. Enter your credentials for abapgit. You will see the available artifacts to import into your ABAP system. 
+8.	Choose `Pull` and confirm every subpackage on your transport request. 
+9.	Select the package `ZCLASSIFICATION_SAMPLE` to be overwritten with the demo content. 
+10. You will get an information screen telling you to only make repairs when they are urgent, which you can confirm.  
+11. In the following screen, select all inactive objects and confirm the activation.
+12.	Once the cloning has finished, refresh your project tree.
 
-1. [Step 1: Install the standalone abapGit version](https://docs.abapgit.org/user-guide/getting-started/install.html) if you have not already done so.
-2. [Step 2: Install an Offline repository ](https://docs.abapgit.org/user-guide/projects/offline/install.html) -you can create package here if not done before.
-3. Step 3: Download Code of this Git hub repository in Zip format <img src="images/DownloadZIPCode.png" alt="Download ZIP code" width="100%">
-4. [Step 4: Using installed standalone abapGit in Step 1 and installed offline repo from Step 2 Import ZIP file downloaded from Step 3 ](https://docs.abapgit.org/user-guide/projects/offline/import-zip.html).
->First Install Package `ZDSAG_CLASSIFICATION_C1`
 
->Next Install Package `ZDSAG_CLASIFICATION_CLOUD`
-6. Now pull/import the solution implementation using the context menu _**Pull...**_.
-7. Activate the imported development objects (**Ctrl+Shift+F3**).
+As a result of the installation procedure above, the ABAP system creates an inactive version of all artifacts from the demo content and adds the following sub packages to the target package: 
+* `ZDSAG_CLASSIFICATION_C1`
+* `ZDSAG_CLASIFICATION_CLOUD`
 
 
 ## 📹Recording 
