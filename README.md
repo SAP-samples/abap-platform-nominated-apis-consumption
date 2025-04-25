@@ -11,16 +11,6 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 **Description**
 This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` . 
 
-
-## Table of Content
-- [Requirements](#requirements)
-- [Overview](#overview)
-- [Recording](#recording)
-- [Solution Overview](#solution-overview)
-- [How to download and install this example](#how-to-download-and-install-this-example)
-- [How to obtain support](#how-to-obtain-support) 
-- [Further Information](#ℹfurther-information)
-
 ## 🔎Overview
 
 > This repository is all about how to build wrapper around nominated APIs and use it as RAP BO  ; especially about how to use  when building greenfield implementations.
