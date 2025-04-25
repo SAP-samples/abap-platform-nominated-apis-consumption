@@ -29,7 +29,7 @@ This repository contains the material for the `Devtoberfest 2024- Clean Core Ext
 Choose this if you are working on SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, private edition. 
 To import the reference scenario into your ABAP system, follow the steps in the relevant README file and download the sources from the branch corresponding to your your backend version: 
 
-* [README](../ABAP-platform-2023-classification-maintenance /README.md) of branch <em>ABAP-platform-2023-classification-maintenance </em> (Application Server ABAP 7.58)
+* [README](../ABAP-platform-2023-classification-maintenance/README.md) of branch <em>ABAP-platform-2023-classification-maintenance </em> (Application Server ABAP 7.58)
 
 For more information about the ABAP Flight Reference Scenario, see [Downloading the ABAP Flight Reference Scenario](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/def316685ad14033b051fc4b88db07c8.htmll).
 
