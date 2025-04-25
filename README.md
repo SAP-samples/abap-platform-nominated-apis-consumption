@@ -21,8 +21,6 @@ To import the reference scenario into your ABAP system, follow the steps in the 
 
 * [README](../ABAP-platform-2023-classification-maintenance/README.md) of branch <em>ABAP-platform-2023-classification-maintenance </em> (Application Server ABAP 7.58)
 
-For more information about the ABAP Flight Reference Scenario, see [Downloading the ABAP Flight Reference Scenario](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/def316685ad14033b051fc4b88db07c8.htmll).
-
 ## 📹Recording 
 [^Top of page](#)
 
@@ -34,7 +32,7 @@ For a compact overview of this repository , watch the session replay from SAP De
 The code available in this repository is slightly different from this recording.
 
 ## Known Issues
-<!-- You may simply state "No known issues. -->
+No known issues. 
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/abap-platform-nominated-apis-consumption/issues) in this repository if you find a bug or have questions about the content.
