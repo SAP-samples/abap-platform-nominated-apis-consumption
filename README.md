@@ -39,7 +39,10 @@ The requirements to follow the exercises in this repository are:
 1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
 2. [Understand the sample scenario how to mitigate a missing released SAP API](https://developers.sap.com/tutorials/abap-s4hanacloud-purchasereq-understand-scenario.html) (_Read Step 4 for technical requirements_)
 3. [Create an ABAP Cloud Project](https://developers.sap.com/tutorials/abap-environment-create-abap-cloud-project.html)
-
+4. You have created an ABAP Project in ADT that allows you to access your Application Server as mentioned above. Your log-on language is English.
+5. You have downloaded and installed the `zabapgit_standalone` report. Make sure to use the most recent version as indicated on the [installation page](https://docs.abapgit.org/). 
+6. You have installed the certificate files for github.com, see [abapGit Documentation](https://docs.abapgit.org/guide-ssl-setup.html).
+   
 </details>
 
 ## 🔎Overview
