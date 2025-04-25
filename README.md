@@ -181,6 +181,15 @@ As a result of the installation procedure above, the ABAP system creates an inac
 * `ZDSAG_CLASSIFICATION_C1`
 * `ZDSAG_CLASIFICATION_CLOUD`
 
+## Configuration
+
+To generate service artifacts for the service bindings:
+1. In each service binding, choose the button `Publish`.
+
+
+NOTE: In case the activation via the button in the service bindings is not possible, you can use Gateway tools to activate the service, see [here](https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/b58a3c27df4e406f9335d4b346f6be04.html?version=202210.LATEST#%EE%81%B0-service-transport2).  
+
+
 
 ## 📹Recording 
 [^Top of page](#)
