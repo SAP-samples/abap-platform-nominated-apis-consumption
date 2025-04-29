@@ -15,6 +15,26 @@ This repository contains the material for the `Devtoberfest 2024- Clean Core Ext
 
 > This repository is all about how to build wrapper around nominated APIs and use it as RAP BO  ; especially about how to use  when building greenfield implementations.
 
+## 📋 Requirements
+[^Top of page](#)
+
+> You need the latest version of the ABAP Development Tools for Eclipse (ADT) on your laptop or PC as well as the access to an appropriate ABAP system* to carry out the practical exercises of this workshop.
+>
+> (*) The supported ABAP systems are release 2023 of SAP S/4HANA Cloud Private Edition and SAP S/4HANA.
+
+<details>
+  <summary>Click to expand!</summary>
+
+The requirements to follow the exercises in this repository are:
+1. [Install the latest Eclipse platform and the latest ABAP Development Tools (ADT) plugin](https://developers.sap.com/tutorials/abap-install-adt.html)
+2. [Understand the sample scenario how to mitigate a missing released SAP API](https://developers.sap.com/tutorials/abap-s4hanacloud-purchasereq-understand-scenario.html) (_Read Step 4 for technical requirements_)
+3. [Create software component using `ABAP For Cloud` as `ABAP Language Version`](https://help.sap.com/docs/ABAP_PLATFORM_NEW/b5670aaaa2364a29935f40b16499972d/8da870021323498db15a1c56cfc9b302.html)
+4. You have created an ABAP Project in ADT that allows you to access your Application Server as mentioned above. Your log-on language is English.
+5. You have downloaded and installed the `zabapgit_standalone` report. Make sure to use the most recent version as indicated on the [installation page](https://docs.abapgit.org/). 
+6. You have installed the certificate files for github.com, see [abapGit Documentation](https://docs.abapgit.org/guide-ssl-setup.html).
+   
+</details>
+
 ## ABAP Platform
 Choose this if you are working on SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, private edition. 
 To import the reference scenario into your ABAP system, follow the steps in the relevant README file and download the sources from the branch corresponding to your your backend version: 
