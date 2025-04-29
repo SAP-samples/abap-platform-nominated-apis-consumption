@@ -9,10 +9,10 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 # Introduction
 
 **Description**
-This repository contains the material for the `AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud` . 
+This repository contains the material for session `AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud` in SAP Teched 2024
 
 It includes two packages:
->ZDSAG_PRODUCT_LIST_CLOUD(ABAP Cloud Language Version) - Contains managed Business Object (BO) with BO nodes or entities, BO projection views,actions, side effects, functions, business event exposure.
+>ZDSAG_PRODUCT_LIST_CLOUD(ABAP Cloud Language Version) - Contains managed Business Object (BO) with BO nodes or entities, BO projection views, actions, business event exposure.
 
 >ZDSAG_PRODUCT_LIST_C1( Standard ABAP Language Version) - Contains wrapper for Nominated APIs and CDS entity for not C1 released artifact.
 
