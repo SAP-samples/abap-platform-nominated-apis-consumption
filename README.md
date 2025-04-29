@@ -31,7 +31,7 @@ It includes two packages:
 
 ## 📋 Requirements
 
-[Requirements section](../main/README.md#requirements) of branch <em> Main </em> 
+[Requirements section](../main/README.md#requirements) of branch <em>`Main`</em> 
 
 
 ## 🔎Overview
