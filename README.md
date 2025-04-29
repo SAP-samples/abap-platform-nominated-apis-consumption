@@ -121,7 +121,7 @@ Use the <em>zabapgit_standalone</em> program to install the <em>RAP Nominated AP
 2.	In your ABAP project, create the package `ZPRODUCT_ASSIGNMENT_SAMPLE` as target package for the demo content. Use `ZABAP_ON_CLOUD` as software component. Assign it to a new transport request that you only use for the demo content import. 
 3.	In your ABAP project, run the program `zabapgit_standalone`.  
 4.	Choose `New Online` and enter the following URL of this repository  `https://github.com/SAP-samples/abap-platform-nominated-apis-consumption.git`.
-5.	To select the Product-Classification-assignment branch, choose `Branch` > `Switch` and select `ABAP-platform-2023-product-material-assignment`. 
+5.	To select the Product-Classification-assignment branch, choose `Branch` > `Switch` and select `ABAP-platform-2023-product-classification-assignment`. 
 6.	In the package field, enter the newly created package `ZPRODUCT_ASSIGNMENT_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
 7.	Leave the other fields unchanged and choose `Create Online Repo`.
 8. Enter your credentials for abapgit. You will see the available artifacts to import into your ABAP system. 
