@@ -57,6 +57,20 @@ The code available in this repository is slightly different from these recording
 ## Known Issues
 No known issues. 
 
+## ℹFurther Information
+[^Top of page](#)
+
+You can find further information on the ABAP RESTful Application Programming Model (RAP) here:
+  - 📃 [State-of-the-Art ABAP Development with RAP | SAP Community](https://community.sap.com/topics/abap/rap)- A collection of diverse getting started materials.
+  - 📃 [ABAP Cloud API Enablement Guidelines for SAP S/4HANA Cloud, private edition, and SAP S/4HANA](https://www.sap.com/documents/2023/05/b0bd8ae6-747e-0010-bca6-c68f7e60039b.html).
+  - 📃 [The list of available S/4HANA Cloud Private Edition Classic APIs ](https://github.com/SAP/abap-atc-cr-cv-s4hc/blob/main/src/objectReleaseInfoLatest.csv)
+  - 📃 [Understand the sample scenario how to mitigate a missing released SAP API](https://developers.sap.com/tutorials/abap-s4hanacloud-purchasereq-understand-scenario.html)- A collection of diverse getting started materials.   
+  - 📄 [ABAP Cloud – SAP S/4HANA extensibility – May 2023 update | SAP Blogs](https://blogs.sap.com/2023/05/26/abap-cloud-sap-s-4hana-extensibility-may-2023-update/)
+  - ❓ Most frequently asked questions: [RAP FAQ](https://blogs.sap.com/2020/10/16/abap-restful-application-programming-model-faq/) 
+  - 🛠 [Develop and Run a Fiori Application with SAP Business Application Studio | SAP Tutorials](https://developers.sap.com/tutorials/abap-environment-deploy-cf-production.html)
+  - 🛠 [Landing page with various hands-on workshop materials on ABAP Cloud, including RAP and embedded analytics](https://github.com/SAP-samples/abap-platform-rap-workshops/blob/main/README.md) 
+
+
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/abap-platform-nominated-apis-consumption/issues) in this repository if you find a bug or have questions about the content.
  
