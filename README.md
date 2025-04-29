@@ -48,6 +48,7 @@ To import the reference scenario into your ABAP system, follow the steps in the 
 For a compact overview of this repository , watch the session replay from SAP Devtoberfest 2024 (_gated content_):  
 
 ⏺  [Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition - Youtube Video ](https://www.youtube.com/watch?v=HQPXI1Ba-Gk&list=PL6RpkC85SLQDHz97qsNTNAE2jnUKj8X5d&index=65)
+
 ⏺  [AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud ](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1721791179982001rM76)
 
 **Note:**  
