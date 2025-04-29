@@ -98,7 +98,7 @@ The OData service you are going to implement is based on the SAP GUI transaction
 <details>
   <summary>Click to expand!</summary>
 
-**ZDSAG_CLASSIFICATION_C1**
+**ZDSAG_PRODUCT_LIST_C1**
 
 >Lets see what are the objects present in this package:
 
@@ -109,7 +109,7 @@ The OData service you are going to implement is based on the SAP GUI transaction
 **Note:**  
 The package contains other objects as well, but we have given overview of only few key artifacts.
 
-**ZDSAG_CLASIFICATION_CLOUD**
+**ZDSAG_PRODUCT_LIST_CLOUD**
 
 >Lets see what are the objects present in this package:
 
