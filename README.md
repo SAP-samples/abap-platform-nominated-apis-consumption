@@ -65,14 +65,14 @@ This session material guides you through the development of the OData service of
 >  
 The OData service you are going to implement is based on the SAP GUI transaction MM01/MM02.
 >
-> To set the business context, the scenario is the following: The department responsible for managing  "Materials  & Classification" is requesting you to build a new display only Fiori app with draft capabilities for processing assignment of Material with Classification.
+> To set the business context, the scenario is the following: The department responsible for managing  "Materials  & Classification" is requesting you to build a new display only Fiori app  for processing assignment of Material with Classification.
 >
 
 
 <details>
   <summary>Click to expand!</summary>
 
->Scenario 2: Assign existing `Materail Master` to a `Classification`
+>Scenario 1: Assign existing `Materail Master` to a `Classification`
 >
 We use nominated API , to assign existing `Material` to existing `Classification`.
 
