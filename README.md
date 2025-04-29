@@ -146,7 +146,6 @@ NOTE: In case the activation via the button in the service bindings is not possi
 
 
 ## 📹Recording 
-[^Top of page](#)
 
 For a compact overview of this repository , watch the session replay from SAP Teched 2024 (_gated content_):  
 
