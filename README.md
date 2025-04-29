@@ -9,7 +9,7 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 # Introduction
 
 **Description**
-This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` . 
+This repository contains the material for the `AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud` . 
 
 It includes two packages:
 >ZDSAG_PRODUCT_LIST_CLOUD(ABAP Cloud Language Version) - Contains managed Business Object (BO) with BO nodes or entities, BO projection views,actions, side effects, functions, business event exposure.
@@ -129,14 +129,14 @@ The package contains other objects as well, but we have given overview of only f
 
 Use the <em>zabapgit_standalone</em> program to install the <em>RAP Nominated APIs consumption Scenario</em> by executing the following steps:
 1.  Create software component `ZABAP_ON_CLOUD` using `ABAP For Cloud` as `ABAP Language Version` as mentioned in `Requirement` section of this file.
-2.	In your ABAP project, create the package `ZCLASSIFICATION_SAMPLE` as target package for the demo content. Use `ZABAP_ON_CLOUD` as software component. Assign it to a new transport request that you only use for the demo content import. 
+2.	In your ABAP project, create the package `ZPRODUCT_ASSIGNMENT_SAMPLE` as target package for the demo content. Use `ZABAP_ON_CLOUD` as software component. Assign it to a new transport request that you only use for the demo content import. 
 3.	In your ABAP project, run the program `zabapgit_standalone`.  
 4.	Choose `New Online` and enter the following URL of this repository  `https://github.com/SAP-samples/abap-platform-nominated-apis-consumption`. 
-5.	In the package field, enter the newly created package `ZCLASSIFICATION_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
+5.	In the package field, enter the newly created package `ZPRODUCT_ASSIGNMENT_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
 6.	Leave the other fields unchanged and choose `Create Online Repo`.
 7. Enter your credentials for abapgit. You will see the available artifacts to import into your ABAP system. 
 8.	Choose `Pull` and confirm every subpackage on your transport request. 
-9.	Select the package `ZCLASSIFICATION_SAMPLE` to be overwritten with the demo content. 
+9.	Select the package `ZPRODUCT_ASSIGNMENT_SAMPLE` to be overwritten with the demo content. 
 10. You will get an information screen telling you to only make repairs when they are urgent, which you can confirm.  
 11. In the following screen, select all inactive objects and confirm the activation.
 12.	Once the cloning has finished, refresh your project tree.
@@ -159,9 +159,9 @@ NOTE: In case the activation via the button in the service bindings is not possi
 ## 📹Recording 
 [^Top of page](#)
 
-For a compact overview of this repository , watch the session replay from SAP Devtoberfest 2024 (_gated content_):  
+For a compact overview of this repository , watch the session replay from SAP Teched 2024 (_gated content_):  
 
-⏺  [Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition - Youtube Video ](https://www.youtube.com/watch?v=HQPXI1Ba-Gk&list=PL6RpkC85SLQDHz97qsNTNAE2jnUKj8X5d&index=65)
+⏺  [AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1721791179982001rM76)
 
 **Note:**  
 The code available in this repository is slightly different from this recording.
