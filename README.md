@@ -1,4 +1,4 @@
-# Build transactional SAP Fiori elements-based Apps with nominated APIs using Tier 2 extensibility model in ABAP RESTful Application Programming Model (RAP)
+d# Build transactional SAP Fiori elements-based Apps with nominated APIs using Tier 2 extensibility model in ABAP RESTful Application Programming Model (RAP)
 > When you are developing an RAP Application in SAP S/4 Private Cloud Edition and you identify a artifact like `BAPI` which has a missing C1 released artifact but you find it as `nominated API` , you mitigate the situation by creating a Tier 2 wrapper  
 >
 
@@ -9,7 +9,7 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 # Introduction
 
 **Description**
-This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` . 
+This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` and `SAP Teched 2024- AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud`. 
 
 ## 🔎Overview
 
@@ -20,6 +20,7 @@ Choose this if you are working on SAP S/4HANA, on-premise edition or SAP S/4HANA
 To import the reference scenario into your ABAP system, follow the steps in the relevant README file and download the sources from the branch corresponding to your your backend version: 
 
 * [README](../ABAP-platform-2023-classification-maintenance/README.md) of branch <em>ABAP-platform-2023-classification-maintenance </em> (Application Server ABAP 7.58)
+* [README](../ABAP-platform-2023-product-material-assignment/README.md) of branch <em>ABAP-platform-2023-Assignment of Material to Classification </em> (Application Server ABAP 7.58)
 
 ## 📹Recording 
 [^Top of page](#)
@@ -27,9 +28,10 @@ To import the reference scenario into your ABAP system, follow the steps in the 
 For a compact overview of this repository , watch the session replay from SAP Devtoberfest 2024 (_gated content_):  
 
 ⏺  [Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition - Youtube Video ](https://www.youtube.com/watch?v=HQPXI1Ba-Gk&list=PL6RpkC85SLQDHz97qsNTNAE2jnUKj8X5d&index=65)
+⏺  [AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud ](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1721791179982001rM76)
 
 **Note:**  
-The code available in this repository is slightly different from this recording.
+The code available in this repository is slightly different from these recording.
 
 ## Known Issues
 No known issues. 
