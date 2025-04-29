@@ -39,7 +39,7 @@ The requirements to follow the exercises in this repository are:
 Choose this if you are working on SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, private edition. 
 To import the reference scenario into your ABAP system, follow the steps in the relevant README file and download the sources from the branch corresponding to your your backend version: 
 
-* [README](../ABAP-platform-2023-classification-maintenance/README.md) of branch <em>ABAP-platform-2023-classification-maintenance </em> (Application Server ABAP 7.58)
+* [README](../ABAP-platform-2023-classification-maintenance/README.md) of branch <em>ABAP-platform-2023-Classification-Maintenance </em> (Application Server ABAP 7.58)
 * [README](../ABAP-platform-2023-product-classification-assignment/README.md) of branch <em>ABAP-platform-2023-Product Classification Assignment </em> (Application Server ABAP 7.58)
 
 ## 📹Recording 
