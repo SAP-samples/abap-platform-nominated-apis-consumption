@@ -20,7 +20,6 @@ It includes two packages:
 ## Table of Content
 - [Requirements](#requirements)
 - [Overview](#overview)
-- [Business Scenario](#business-scenario)
 - [Solution Overview](#solution-overview)
 - [How to download and install this example](#how-to-download-and-install-this-example)
 - [Configuration](#configuration)
