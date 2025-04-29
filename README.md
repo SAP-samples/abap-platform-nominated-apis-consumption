@@ -43,18 +43,18 @@ It includes two packages:
 
 ### Business Scenario
 In a nutshell
-> We display the list of available materials from `Material Master`in system
+> We display the list of available Products from `Product Master` (MM03) in system
 > 
-> Assign the `Material Master` to `Classification` using nominated API.
+> Assign the `Product Master` to `Classification` using nominated API.
 >
-> If the Material is assigned with `Classification` for the first time we raise an BOR event 
+> If the Product is assigned with `Classification` for the first time we raise an BOR event 
 >
 > 
-This session material guides you through the development of the OData service of a SAP Fiori elements based _Classification Assignment to Material App_ with RAP, using the _managed_ business object (BO) runtime implementation .
+This session material guides you through the development of the OData service of a SAP Fiori elements based _Classification Assignment to Product App_ with RAP, using the _managed_ business object (BO) runtime implementation .
 >  
 The OData service you are going to implement is based on the SAP GUI transaction MM01/MM02.
 >
-> To set the business context, the scenario is the following: The department responsible for managing  "Materials  & Classification" is requesting you to build a new display only Fiori app  for processing assignment of Material with Classification.
+> To set the business context, the scenario is the following: The department responsible for managing  "Products  & Classification" is requesting you to build a new display only Fiori app  for processing assignment of Product with Classification.
 >
 
 
@@ -63,14 +63,14 @@ The OData service you are going to implement is based on the SAP GUI transaction
 
 >Scenario : Assign existing `Materail Master` to a `Classification`
 
->We use nominated API , to assign existing `Material` to existing `Classification`.
+>We use nominated API , to assign existing `Product` to existing `Classification`.
 
 > We achieve this help of `Action` in RAP.
 
 **List Report**:
 <img src="images/List Report- Product List.png" alt="List Repo" width="100%">
 
-**Object Page-Action to do this assignment of Material to Classification**:
+**Object Page-Action to do this assignment of Product to Classification**:
 <img src="images/ObjectPage- Product.png" alt="RAP Action" width="100%">
 
 **We can do this in classic way directly using SAP GUI transaction MM01/MM02**:
@@ -91,8 +91,8 @@ The OData service you are going to implement is based on the SAP GUI transaction
 
 >Lets see what are the objects present in this package:
 
-1. ZCL_DSAG_BAPI_OBJCL - Tier 2 Wrapper for nominated API of Material Master to Classification Assignment - `BAPI_OBJCL_CREATE`
-2. ZCL_DSAG_CLASS_ASSIGNMENT_CHK  - Tier 2 Wrapper for checking existing `Classification` details assigned to `Material Master` before triggering assignment .
+1. ZCL_DSAG_BAPI_OBJCL - Tier 2 Wrapper for nominated API of Product Master to Classification Assignment - `BAPI_OBJCL_CREATE`
+2. ZCL_DSAG_CLASS_ASSIGNMENT_CHK  - Tier 2 Wrapper for checking existing `Classification` details assigned to `Product Master` before triggering assignment .
 3. ZCL_DSAG_BOR_HANDLER_PRODUCT - BOR Event Handler Implementation
 
 **Note:**  
@@ -104,7 +104,7 @@ The package contains other objects as well, but we have given overview of only f
 
 >BO - Business Object
 
-1. ZDSAG_R_PRODUCT - Root BO for `Material Master`
+1. ZDSAG_R_PRODUCT - Root BO for `Product Master`
 2. ZDSAG_C_PRODUCT - Root BO Projection View
 3. ZDSAG_I_CLASSIFICATIONHELPER - BO for `Classification`
 4. ZDSAG_I_CHARACTERISTICHELPER - BO for `Characteristics`
