@@ -120,15 +120,16 @@ Use the <em>zabapgit_standalone</em> program to install the <em>RAP Nominated AP
 1.  Create software component `ZABAP_ON_CLOUD` using `ABAP For Cloud` as `ABAP Language Version` as mentioned in `Requirement` section of this file.
 2.	In your ABAP project, create the package `ZPRODUCT_ASSIGNMENT_SAMPLE` as target package for the demo content. Use `ZABAP_ON_CLOUD` as software component. Assign it to a new transport request that you only use for the demo content import. 
 3.	In your ABAP project, run the program `zabapgit_standalone`.  
-4.	Choose `New Online` and enter the following URL of this repository  `https://github.com/SAP-samples/abap-platform-nominated-apis-consumption`. 
-5.	In the package field, enter the newly created package `ZPRODUCT_ASSIGNMENT_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
-6.	Leave the other fields unchanged and choose `Create Online Repo`.
-7. Enter your credentials for abapgit. You will see the available artifacts to import into your ABAP system. 
-8.	Choose `Pull` and confirm every subpackage on your transport request. 
-9.	Select the package `ZPRODUCT_ASSIGNMENT_SAMPLE` to be overwritten with the demo content. 
-10. You will get an information screen telling you to only make repairs when they are urgent, which you can confirm.  
-11. In the following screen, select all inactive objects and confirm the activation.
-12.	Once the cloning has finished, refresh your project tree.
+4.	Choose `New Online` and enter the following URL of this repository  `https://github.com/SAP-samples/abap-platform-nominated-apis-consumption.git`.
+5.	To select the Product-Classification-assignment branch, choose `Branch` > `Switch` and select `ABAP-platform-2023-product-material-assignment`. 
+6.	In the package field, enter the newly created package `ZPRODUCT_ASSIGNMENT_SAMPLE`. In the branch field, select the branch `ABAP-platform-2023-classification-maintenance`.
+7.	Leave the other fields unchanged and choose `Create Online Repo`.
+8. Enter your credentials for abapgit. You will see the available artifacts to import into your ABAP system. 
+9.	Choose `Pull` and confirm every subpackage on your transport request. 
+10.	Select the package `ZPRODUCT_ASSIGNMENT_SAMPLE` to be overwritten with the demo content. 
+11. You will get an information screen telling you to only make repairs when they are urgent, which you can confirm.  
+12. In the following screen, select all inactive objects and confirm the activation.
+13.	Once the cloning has finished, refresh your project tree.
 
 
 As a result of the installation procedure above, the ABAP system creates an inactive version of all artifacts from the demo content and adds the following sub packages to the target package: 
