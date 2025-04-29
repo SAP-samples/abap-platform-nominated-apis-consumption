@@ -9,7 +9,7 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 # Introduction
 
 **Description**
-This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` and `SAP Teched 2024- AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud`. 
+This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition`  & `SAP Teched 2024- AD106 | Clean core extensibility of SAP S/4HANA Cloud Private Edition with ABAP Cloud`. 
 
 ## 🔎Overview
 
