@@ -45,7 +45,7 @@ To import the reference scenario into your ABAP system, follow the steps in the 
 ## 📹Recording 
 [^Top of page](#)
 
-For a compact overview of this repository , watch the session replay from SAP Devtoberfest 2024 (_gated content_):  
+For a compact overview of this repository , watch the session replay from SAP Devtoberfest 2024 (_gated content_) & SAP Teched 2024 (_gated content_):  
 
 ⏺  [Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition - Youtube Video ](https://www.youtube.com/watch?v=HQPXI1Ba-Gk&list=PL6RpkC85SLQDHz97qsNTNAE2jnUKj8X5d&index=65)
 
