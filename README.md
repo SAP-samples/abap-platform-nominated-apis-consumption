@@ -12,9 +12,9 @@ You can have a brief understanding on: [ ABAP Cloud - How to mitigate missing re
 This repository contains the material for the `Devtoberfest 2024- Clean Core Extensibility with ABAP Cloud in SAP S/4HANA Cloud Private Edition` . 
 
 It includes two packages:
->ZDSAG_CLASIFICATION_CLOUD(ABAP Cloud Language Version) - Contains managed Business Object (BO) with BO nodes or entities, BO projection views, late numbering, determine actions, actions, side effects, functions, business event exposure, and additional save.
+>ZDSAG_PRODUCT_LIST_CLOUD(ABAP Cloud Language Version) - Contains managed Business Object (BO) with BO nodes or entities, BO projection views,actions, side effects, functions, business event exposure.
 
->ZDSAG_CLASSIFICATION_C1( Standard ABAP Language Version) - Contains wrapper for Nominated APIs and CDS entity for not C1 released artifact.
+>ZDSAG_PRODUCT_LIST_C1( Standard ABAP Language Version) - Contains wrapper for Nominated APIs and CDS entity for not C1 released artifact.
 
 
 ## Table of Content
@@ -54,60 +54,27 @@ The requirements to follow the exercises in this repository are:
 
 ### Business Scenario
 In a nutshell
-> We create/update `Classification` using nominated APIs
+> We display the list of available materials from `Material Master`in system
 > 
-> Assign the `Classification` to `Material Master` using nominated API.
+> Assign the `Material Master` to `Classification` using nominated API.
 >
 > If the Material is assigned with `Classification` for the first time we raise an BOR event 
 >
 > 
-This session material guides you through the development of the OData service of a SAP Fiori elements based _Classification Processing App_ with RAP, using the _managed_ business object (BO) runtime implementation with unmanaged save and  late numbering.
+This session material guides you through the development of the OData service of a SAP Fiori elements based _Classification Assignment to Material App_ with RAP, using the _managed_ business object (BO) runtime implementation .
 >  
-> Here we chose  `unmanaged save` as we intend to use nominated APIs aka `BAPI` for CRUDQ trasanctional capabilities .
+The OData service you are going to implement is based on the SAP GUI transaction MM01/MM02.
 >
-The OData service you are going to implement is based on the SAP GUI transaction CL01/CL02/CL03.
->
-> To set the business context, the scenario is the following: The department responsible for managing "Classification" is requesting you to build a new Fiori app with draft capabilities for processing (i.e. creating, updating and deleting) classification.
+> To set the business context, the scenario is the following: The department responsible for managing  "Materials  & Classification" is requesting you to build a new display only Fiori app with draft capabilities for processing assignment of Material with Classification.
 >
 
 
 <details>
   <summary>Click to expand!</summary>
 
->Scenario 1: Creation and Update existing `Classification`
+>Scenario 2: Assign existing `Materail Master` to a `Classification`
 >
-The resulting _Classification Processing App_ app is a SAP Fiori elements-based List Report app with search, filter, and draft capabilities for processing _Classification_ . A navigation to an Object Page for displaying the details of each _Classification_ entry in the list report is offered. The application will look like this: 
-
-**List Report**:
-<img src="images/ListReport.png" alt="Classification App - List Report" width="100%">
-  
-**Object Page**: 
-<img src="images/ObjectPage.png" alt="Classification App - Object Page" width="100%">
-
-Let us breakdown of  SAP GUI transaction _CL01_ which comprises of different section(information stored across multiple database)   _Classification App_ .
-
-**Basic Data**:
-<img src="images/CL01_Basic_Data.png" alt="CL01-Basic Data" width="100%">
-
-**Keywords**:
-<img src="images/CL01_Keywords.png" alt="CL01-Keywords" width="100%">
-
-**Characteristics**:
-<img src="images/CL01_Characteristics.png" alt="CL01-Characteristics" width="100%">
-
-**So we would be building a RAP application that would be a mimic of these sections from CL01/CL02/CL03.**
-<img src="images/GUI_RAP application.png" alt="SAP GUI CL01 transaction to RAP Application" width="80%">
-
-**Disclaimer**: We have taken only few sections from CL01 transaction for this sample.
-
-
-Below is the simplified _Classification_ data model underlying the app.
-
-<img src="images/Flowdiagram.png" alt="Classification Creation/Updation Model" width="100%">
-
->Scenario 2: Assign existing `Classification` to a `Material Master`
->
-We use nominated API , to assign existing `Classification` to existing `Material`.
+We use nominated API , to assign existing `Material` to existing `Classification`.
 
 > We achieve this help of `Action` in RAP.
 
@@ -122,7 +89,7 @@ We use nominated API , to assign existing `Classification` to existing `Material
 
 ## 🛠 Solution Overview
 
-> You can import the solution package **`ZDSAG_CLASSIFICATION_C1`** **`ZDSAG_CLASIFICATION_CLOUD`** into your system* by following [How to download and install this example](#how-to-download-and-install-this-example). 
+> You can import the solution package **`ZDSAG_PRODUCT_LIST_C1`** **`ZDSAG_PRODUCT_LIST_CLOUD`** into your system* by following [How to download and install this example](#how-to-download-and-install-this-example). 
 >
 > (*) The supported ABAP systems are 2023 of SAP S/4HANA Cloud Private Edition and SAP S/4HANA.
 <details>
@@ -132,11 +99,9 @@ We use nominated API , to assign existing `Classification` to existing `Material
 
 >Lets see what are the objects present in this package:
 
-1. ZDSAG_BAPI_CLASS_CREATE - Tier 2 Wrapper for nominated API of Classification Creation - `BAPI_CLASS_CREATE`
-2. ZDSAG_BAPI_CLASS_CHANGE - Tier 2 Wrapper for nominated API of Classification Update -`BAPI_CLASS_CHANGE`
-3. ZDSAG_BAPI_OBJCL_CREATE - Tier 2 Wrapper for nominated API of Classification Assignment to Material Master - `BAPI_OBJCL_CREATE`
-4. ZDSAG_GET_CLASS_DETAIL  - Tier 2 Wrapper for reading existing 'Classification' details - here we combine usage of nominated API `BAPI_CLASS_GET_CHARACTERISTICS` and `I_CLFNCLASS`(Basic Data) and `I_CLFNCLASDESCRIPTION`(Keywords).
-5. ZDSAG_BOR_EVENT_HANDLER - BOR Event Handler Implementation
+1. ZCL_DSAG_BAPI_OBJCL - Tier 2 Wrapper for nominated API of Material Master to Classification Assignment - `BAPI_OBJCL_CREATE`
+2. ZCL_DSAG_CLASS_ASSIGNMENT_CHK  - Tier 2 Wrapper for checking existing `Classification` details assigned to `Material Master` before triggering assignment .
+3. ZCL_DSAG_BOR_HANDLER_PRODUCT - BOR Event Handler Implementation
 
 **Note:**  
 The package contains other objects as well, but we have given overview of only few key artifacts.
@@ -147,14 +112,11 @@ The package contains other objects as well, but we have given overview of only f
 
 >BO - Business Object
 
-1. ZDSAG_R_CLASSIFICATION - Root BO for `Basic Data`
-2. ZDSAG_C_CLASSIFICATION - Root BO Projection View
-3. ZDSAG_R_CLASSDESCRIPTION - BO for `Keywords`
-4. ZDSAG_C_CLASSDESCRIPTION - Projection view for `Keywords` BO
-5. ZDSAG_R_CLASSCHARACTERS - BO for `Characteristics`
-6. ZDSAG_C_CLASSCHARACTERS - Projection view for `Characteristics` BO
-7. ZDSAG_A_CLASSIFICATION_CREATE - Abstract entity for `Classification` created RAP event
-
+1. ZDSAG_R_PRODUCT - Root BO for `Material Master`
+2. ZDSAG_C_PRODUCT - Root BO Projection View
+3. ZDSAG_I_CLASSIFICATIONHELPER - BO for `Classification`
+4. ZDSAG_I_CHARACTERISTICHELPER - BO for `Characteristics`
+   
 **Note:**  
 The package contains other objects as well, but we have given overview of only few key artifacts.
 </details>  
@@ -178,8 +140,8 @@ Use the <em>zabapgit_standalone</em> program to install the <em>RAP Nominated AP
 
 
 As a result of the installation procedure above, the ABAP system creates an inactive version of all artifacts from the demo content and adds the following sub packages to the target package: 
-* `ZDSAG_CLASSIFICATION_C1`
-* `ZDSAG_CLASIFICATION_CLOUD`
+* `ZDSAG_PRODUCT_LIST_C1`
+* `ZDSAG_PRODUCT_LIST_CLOUD`
 
 ## Configuration
 
