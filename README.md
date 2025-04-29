@@ -73,13 +73,16 @@ The OData service you are going to implement is based on the SAP GUI transaction
   <summary>Click to expand!</summary>
 
 >Scenario 1: Assign existing `Materail Master` to a `Classification`
->
-We use nominated API , to assign existing `Material` to existing `Classification`.
+
+>We use nominated API , to assign existing `Material` to existing `Classification`.
 
 > We achieve this help of `Action` in RAP.
 
-**Action to do this assignment of Classification to Material**:
-<img src="images/RAP _Action.png" alt="RAP Action" width="100%">
+**List Report**:
+<img src="images/List Report- Product List.png" alt="List Repo" width="100%">
+
+**Object Page-Action to do this assignment of Material to Classification**:
+<img src="images/ObjectPage- Product.png" alt="RAP Action" width="100%">
 
 **We can do this in classic way directly using SAP GUI transaction MM01/MM02**:
 <img src="images/MM01_MM02_MM03_Assignment.png" alt="CL01-Keywords" width="100%">
