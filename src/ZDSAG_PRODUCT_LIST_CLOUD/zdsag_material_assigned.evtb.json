@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Material assigned with New View",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "producerNamespace": "test.s4",
+  "producer": "P6D2C7FAB6BA4517254000E6296990390",
+  "producerVersion": "0001",
+  "boName": "EventClassificationAssignment",
+  "boOperation": "Created",
+  "producerType": "test.s4.EventClassificationAssignment.Created.v*",
+  "events": [
+    {
+      "eventVersion": "0001",
+      "entityName": "ZDSAG_R_PRODUCT",
+      "entityEventName": "CLASSASSIGNED_2_MATNR"
+    }
+  ]
+}

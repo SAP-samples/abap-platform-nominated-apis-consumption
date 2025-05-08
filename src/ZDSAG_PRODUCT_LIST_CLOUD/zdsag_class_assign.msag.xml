@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Messages - classification assignment for material</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Class Type &amp;1 does not exist. Please choose other option.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Classification &amp;1 already exist, please choose a different name .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Classification &amp;1 instance is locked by user &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Material &amp;1 is locked by user &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Material &amp;1 not found.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Error while assigning Classification to Material</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZDSAG_CLASS_ASSIGN</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Assignment already exists for Material &amp;1</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

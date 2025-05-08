@@ -1,0 +1,20 @@
+managed implementation in class zbp_dsag_r_product unique;
+strict ( 2 );
+extensible;
+
+define behavior for ZDSAG_R_PRODUCT alias ProductList
+with unmanaged save
+lock master unmanaged
+authorization master ( instance )
+extensible
+{
+  field ( readonly ) Product;
+  action ( features : instance ) assign_class_to_product parameter zdsag_parameter_class_detail;
+
+  side effects
+  {
+    action assign_class_to_product affects $self;
+  }
+
+  event ClassAssigned_2_MATNR parameter zdsag_classification_created;
+}

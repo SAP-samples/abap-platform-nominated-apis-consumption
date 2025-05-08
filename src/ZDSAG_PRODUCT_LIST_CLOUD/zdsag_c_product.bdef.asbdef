@@ -1,0 +1,9 @@
+projection;
+strict ( 2 );
+use side effects;
+
+define behavior for ZDSAG_C_PRODUCT alias ProductList
+{
+
+  use action assign_class_to_product;
+}

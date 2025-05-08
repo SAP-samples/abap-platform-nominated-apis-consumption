@@ -1,0 +1,95 @@
+@Metadata.layer: #CUSTOMER
+@UI:{ headerInfo:{
+    typeName: 'Product',
+    typeNamePlural: 'Products',
+    title:  { type: #STANDARD,value: 'ProductDescription', label: 'Product List' }},
+presentationVariant:[{
+    sortOrder: [{ by:'Product',direction:#DESC}],
+    visualizations: [{type: #AS_LINEITEM }] }]
+    }
+annotate entity ZDSAG_C_PRODUCT
+  with 
+{
+  @UI.facet: [ {
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Product',
+      position: 10
+    },
+    { id: 'Assignment',
+       purpose: #STANDARD,
+       type :#LINEITEM_REFERENCE,
+       label: 'Classification Assignments',
+       position: 20,
+       targetElement: '_ClassificationHelper' } ]
+  @EndUserText.label: 'Product'
+  @UI:{
+      selectionField: [{position: 10}],
+      lineItem:  [
+             {position:10, label: 'Product ID', importance:#HIGH},
+             {qualifier: 'duplicateCheck', position: 10, label: 'Product Number'},
+    {
+      type:#FOR_ACTION,
+      label: 'Assign Classification To Products',
+      dataAction: 'assign_class_to_product',
+      position: 10,
+      invocationGrouping: #CHANGE_SET
+    }]
+      }
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Product'
+  },
+  { type: #FOR_ACTION, dataAction: 'assign_class_to_product', label: 'Assign Classification To Product',invocationGrouping: #CHANGE_SET } ]
+  @Search.defaultSearchElement: true
+  @Search.ranking: #MEDIUM
+  Product;
+  @EndUserText.label: 'Product Description'
+  @UI: { lineItem: [  { position:20 } ],selectionField: [ { position: 20 } ] }
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Product Description'
+  } ]
+  ProductDescription;
+  @EndUserText.label: 'Base Unit'
+  @UI: { lineItem: [  { position:25 } ] }
+  @UI.identification: [ {
+    position: 25 ,
+    label: 'Base Unit'
+  } ]
+  BaseUnit;
+  @EndUserText.label: 'Validity Start Date'
+  @UI: { lineItem: [  { position:30 } ] }
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Validity Start Date'
+  } ]
+  ValidityStartDate;
+  @EndUserText.label: 'Created on'
+  @UI: { lineItem: [  { position:40 } ],selectionField: [ { position: 40 } ] }
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Created on'
+  } ]
+  CreationDateTime;
+  @EndUserText.label: 'Created By User'
+  @UI: { lineItem: [  { position:50 } ],selectionField: [ { position: 50 } ] }
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Created By User'
+  } ]
+  CreatedByUser;
+  @EndUserText.label: 'Last Changed on'
+  @UI: { lineItem: [  { position:60 } ],selectionField: [ { position: 60 } ] }
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Last Changed on'
+  } ]
+  LastChangeDateTime;
+  @EndUserText.label: 'Last Changed By User'
+  @UI: { lineItem: [  { position:70 } ],selectionField: [ { position: 70 } ] }
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Last Changed By User'
+  } ]
+  LastChangedByUser;
+}

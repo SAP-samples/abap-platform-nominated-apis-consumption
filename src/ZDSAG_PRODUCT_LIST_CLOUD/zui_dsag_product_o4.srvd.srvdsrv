@@ -1,0 +1,6 @@
+@EndUserText.label: 'product list'
+@ObjectModel.leadingEntity.name: 'ZDSAG_C_PRODUCT'
+define service ZUI_DSAG_PRODUCT_O4 {
+  expose ZDSAG_C_PRODUCT              as ProductList;
+  expose ZDSAG_I_ClassificationHelper as ClassificationHelper;
+}
